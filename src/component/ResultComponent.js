@@ -9,7 +9,7 @@ const ResultComponent = () => {
                     return(
                         <>
                             <div>
-                                <h1>{number}</h1>
+                                <h5>The current count is {number}</h5>
                             </div>
                         </>
                     )

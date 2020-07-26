@@ -5,7 +5,7 @@ import ResultComponent from "./ResultComponent";
 
 const CardComponent = ()=>{
     return(
-        <div>
+        <div className="m-5">
             <ResultComponent/>
             <ButtonComponent/>
         </div>

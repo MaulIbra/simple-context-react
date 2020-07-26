@@ -1,5 +1,6 @@
 import React from 'react';
 import {IncDecContext} from "../context/IncreaseDecreaseContext";
+import {Button} from "react-bootstrap";
 
 const ButtonComponent = () => {
     return (
@@ -8,8 +9,8 @@ const ButtonComponent = () => {
                 ({increaseToggle,decreaseToggle}) => {
                     return(
                         <>
-                            <button onClick={increaseToggle}>Increase</button>
-                            <button onClick={decreaseToggle}>Decrease</button>
+                            <Button variant="outline-danger m-2" onClick={decreaseToggle}>Decrement Count</Button>
+                            <Button variant="outline-primary m-2" onClick={increaseToggle}>Increment Count</Button>
                         </>
                     )
                 }

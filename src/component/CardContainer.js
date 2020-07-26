@@ -29,7 +29,6 @@ class CardContainer extends Component {
     }
 
     render() {
-        console.log(this.state)
         return (
             <div>
                 <IncDecContext.Provider value={this.state}>
