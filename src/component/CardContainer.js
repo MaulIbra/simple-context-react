@@ -7,13 +7,6 @@ class CardContainer extends Component {
     constructor(props) {
         super(props);
 
-        this.increaseToggle = () =>{
-            this.setState({
-                ...this.state,
-                number : this.state.number + 1
-            })
-        }
-
         this.decreaseToggle = () =>{
             this.setState({
                 ...this.state,
@@ -21,14 +14,22 @@ class CardContainer extends Component {
             })
         }
 
+        this.increaseToggle = () =>{
+            this.setState({
+                ...this.state,
+                number : this.state.number +  1
+            })
+        }
+
         this.state={
             number : 0,
-            increaseToggle : this.increaseToggle(),
-            decreaseToggle : this.decreaseToggle()
+            increaseToggle : this.increaseToggle,
+            decreaseToggle : this.decreaseToggle
         }
     }
 
     render() {
+        console.log(this.state)
         return (
             <div>
                 <IncDecContext.Provider value={this.state}>

@@ -8,8 +8,8 @@ const ButtonComponent = () => {
                 ({increaseToggle,decreaseToggle}) => {
                     return(
                         <>
-                            <button onClick={()=>increaseToggle()}>Increase</button>
-                            <button onClick={()=>decreaseToggle()}>Decrease</button>
+                            <button onClick={increaseToggle}>Increase</button>
+                            <button onClick={decreaseToggle}>Decrease</button>
                         </>
                     )
                 }
